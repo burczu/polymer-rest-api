@@ -1,0 +1,24 @@
+<link rel="import" href="https://polygit.org/components/polymer/polymer.html">
+
+<dom-module id="hello-world">
+    <template>
+        <style>
+            p {
+                color: red;
+            }
+        </style>
+
+        <p>Hello world and {{andWho}}!</p>
+    </template>
+
+    <script>
+        Polymer({
+            is: 'hello-world',
+            properties: {
+                andWho: {
+                    type: String
+                }
+            }
+        });
+    </script>
+</dom-module>
